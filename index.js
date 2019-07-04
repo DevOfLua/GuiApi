@@ -35,7 +35,7 @@ app.all("/", function(req,res) {
         fs.writeFile(filepath, JSON.stringify(content), function (err) {
           if (err) return console.log(err);
         });
-      }, 5000);
+      }, 1000);
     })
   }
   if (req.method == "GET") {
